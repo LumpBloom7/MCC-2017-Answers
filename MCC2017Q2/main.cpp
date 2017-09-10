@@ -19,9 +19,12 @@ int main() {
         if ( ( words[ a ][ b ] == 'a' || words[ a ][ b ] == 'e' || words[ a ][ b ] == 'i' || words[ a ][ b ] == 'o' ||
                words[ a ][ b ] == 'u' ) ) {
           vowels++; // +1 to the counter for every vowel found.
+          if ( vowels >= 3 ) {
+            good++;
+            break;
+          }
         }
       }
-      if ( vowels >= 3 ) { good++; }
     }
   }
   std::cout << good << std::endl;

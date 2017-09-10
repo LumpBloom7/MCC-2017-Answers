@@ -2,10 +2,6 @@
 #include <string>
 #include <vector>
 
-#include <algorithm>
-#include <iterator>
-#include <functional>
-
 int main() {
   int n;
   std::cin >> n;
